@@ -78,21 +78,21 @@ std::string trapezoid(int w, int h){
   if(w -((h - 1) * 2) <= 0){
     s = "Impossible shape!\n";
     return s;
-  }
+  } // If height is impossibly large for the width return impossible shape.
 
   for(int i = 0; i < h; i++){
     for(int j = 0; j < w; j++){
       if(spaces > j){
 	s += " ";
       }
-    }
+    } // Add spaces only when spaces > j.
     for(int k = 0; k < stars; k++){
       s += "*";
-    }
+    } // Add * based on what stars current value is.
     spaces += 1;
     stars -= 2;
     s += "\n";
-  }
+  } // Increase number of spaces added while decreasing number of stars added
   
   return s;
 }

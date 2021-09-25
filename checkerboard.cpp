@@ -17,14 +17,14 @@ std::string cboard(int w, int h){
     for(int j = 0; j < w + 2; j++){
       if((j + x) % 2 == 0){
 	s += "*";
-      }
+      } // Using mod to alternate between adding * and spaces to s.
       else{
 	s += " ";
       }
     }
     s += "\n";
     x++;
-  }
+  } // Adding \n after every line and increment x for spaces between *.
 
   return s;
 }
