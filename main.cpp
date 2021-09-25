@@ -8,11 +8,12 @@ This program contains the tests for the all functions.
 
 #include <iostream>
 #include "shapes.h"
+#include "checkerboard.h"
 
 int main(){
   std::cout << "Box:\n";
-  std::cout << box(4,4) << "\n";
-  std::cout << box(5,3) << "\n";
+  std::cout << box(7,4) << "\n";
+  std::cout << box(4,5) << "\n";
 
   std::cout << "Cross:\n";
   std::cout << cross(8) << "\n";
@@ -27,8 +28,11 @@ int main(){
   std::cout << upperTriangle(8) << "\n";
 
   std::cout << "Upside-down Trapezoid:\n";
-  std::cout << trapezoid(5, 12) << "\n";
-  std::cout << trapezoid(3, 5) << "\n";
-  std::cout << trapezoid(7, 12) << "\n";
+  std::cout << trapezoid(12, 5) << "\n";
+  std::cout << trapezoid(5, 3) << "\n";
+  std::cout << trapezoid(12, 7) << "\n";
+
+  std::cout << "Checkerboard:\n";
+  std::cout <<  "\n";
   return 0;
 }
