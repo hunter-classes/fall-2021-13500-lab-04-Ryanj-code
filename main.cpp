@@ -7,7 +7,7 @@ This program contains the tests for the all functions.
 */
 
 #include <iostream>
-#include "funcs.h"
+#include "shapes.h"
 
 int main(){
   std::cout << "Box:\n";
@@ -25,5 +25,10 @@ int main(){
   std::cout << "Upper:\n";
   std::cout << upperTriangle(5) << "\n";
   std::cout << upperTriangle(8) << "\n";
+
+  std::cout << "Upside-down Trapezoid:\n";
+  std::cout << trapezoid(5, 12) << "\n";
+  std::cout << trapezoid(3, 5) << "\n";
+  std::cout << trapezoid(7, 12) << "\n";
   return 0;
 }

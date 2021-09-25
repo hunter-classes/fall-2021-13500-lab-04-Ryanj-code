@@ -1,14 +1,14 @@
 # Starter Makefile
 # add .cpp and .h files as specified in each task.
 
-main: main.o funcs.o
-	g++ -o main main.o funcs.o
+main: main.o shapes.o
+	g++ -o main main.o shapes.o
 
-main.o: main.cpp funcs.h
+main.o: main.cpp shapes.h
 	g++ -c main.cpp
 
-funcs.o: funcs.cpp funcs.h
-	g++ -c funcs.cpp
+shapes.o: shapes.cpp shapes.h
+	g++ -c shapes.cpp
 
 clean:
-	rm -f main.o funcs.o
+	rm -f main.o shapes.o
