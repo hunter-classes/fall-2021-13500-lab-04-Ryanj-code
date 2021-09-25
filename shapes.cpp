@@ -2,8 +2,8 @@
 Author: Ryan Jiang
 Course: CSCI-135
 Instructor: Tong Yi and Mike Zamansky
-Assignment: Lab 3
-This program contains the function that takes in two numbers height and width, and prints a box containing those characteristics.
+Assignment: Lab 4
+This program contains all the shapes function and the cross function.
 */
 
 #include <iostream>

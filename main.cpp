@@ -34,5 +34,9 @@ int main(){
 
   std::cout << "Checkerboard:\n";
   std::cout << cboard(11, 6) << "\n";
+  std::cout << cboard(7, 4) << "\n";
+
+  std::cout << "Checkerboard 3x3:\n";
+  std::cout << cboard3x3(16, 11) << "\n";
   return 0;
 }
