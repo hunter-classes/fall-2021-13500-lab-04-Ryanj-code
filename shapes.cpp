@@ -76,7 +76,7 @@ std::string trapezoid(int w, int h){
   int stars = w;
   
   if(w -((h - 1) * 2) <= 0){
-    s = "Impossible shape!";
+    s = "Impossible shape!\n";
     return s;
   }
 
