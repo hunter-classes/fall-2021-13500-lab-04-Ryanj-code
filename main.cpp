@@ -14,6 +14,10 @@ int main(){
   std::cout << "Box:\n";
   std::cout << box(7,4) << "\n";
   std::cout << box(4,5) << "\n";
+  
+  std::cout << "Checkerboard:\n";
+  std::cout << cboard(11, 6) << "\n";
+  std::cout << cboard(7, 4) << "\n";
 
   std::cout << "Cross:\n";
   std::cout << cross(8) << "\n";
@@ -31,10 +35,6 @@ int main(){
   std::cout << trapezoid(12, 5) << "\n";
   std::cout << trapezoid(5, 3) << "\n";
   std::cout << trapezoid(12, 7) << "\n";
-
-  std::cout << "Checkerboard:\n";
-  std::cout << cboard(11, 6) << "\n";
-  std::cout << cboard(7, 4) << "\n";
 
   std::cout << "Checkerboard 3x3:\n";
   std::cout << cboard3x3(16, 11) << "\n";
