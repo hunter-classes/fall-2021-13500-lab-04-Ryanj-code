@@ -33,6 +33,6 @@ int main(){
   std::cout << trapezoid(12, 7) << "\n";
 
   std::cout << "Checkerboard:\n";
-  std::cout <<  "\n";
+  std::cout << cboard(11, 6) << "\n";
   return 0;
 }

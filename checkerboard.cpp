@@ -11,16 +11,20 @@ This program contains the tests for the all functions.
 
 std::string cboard(int w, int h){
   std::string s = "";
+  int x = 0;
+  
   for(int i = 0; i < h; i++){
-    for(int j = 0; j < w; j++){
-      if(j % 2 == 1){
+    for(int j = 0; j < w + 2; j++){
+      if((j + x) % 2 == 0){
 	s += "*";
       }
       else{
 	s += " ";
       }
     }
+    s += "\n";
+    x++;
   }
-    
+
   return s;
 }
