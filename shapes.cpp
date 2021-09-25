@@ -7,9 +7,9 @@ This program contains the function that takes in two numbers height and width, a
 */
 
 #include <iostream>
-#include "funcs.h"
+#include "shapes.h"
 
-std::string box(int h, int w){
+std::string box(int w, int h){
   std::string s = "";
   
   for(int i = 0; i < h; i++){
@@ -70,7 +70,7 @@ std::string upperTriangle(int x){
   return s;
 }
 
-std::string trapezoid(int h, int w){
+std::string trapezoid(int w, int h){
   std::string s = "";
   int spaces = 0;
   int stars = w;
