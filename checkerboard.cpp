@@ -33,8 +33,8 @@ std::string cboard3x3(int w, int h){
   std::string s = "";
   int stars = 0;
   int spaces = 0;
-  
-  
+	
+  for(int i = 0; i < h; i++){
     for(int j = 0; j < w; j++){
       if((i % 6 < 3 && j % 6 < 3) || (i % 6 >= 3 && j % 6 >= 3)){
         // Only adds * to s if the rows and columns(i and j) will are in the correct position(the if condition) for an * to be placed.  
@@ -57,7 +57,7 @@ std::string cboard3x3(int w, int h){
       }
     }
     s += "\n";
-  } 
+  }
 
   return s;
 }
