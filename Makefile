@@ -1,5 +1,4 @@
 # Makefile
-# add .cpp and .h files as specified in each task.
 
 main: main.o shapes.o checkerboard.o
 	g++ -o main main.o shapes.o checkerboard.o
