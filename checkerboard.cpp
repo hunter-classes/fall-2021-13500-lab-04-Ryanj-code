@@ -57,7 +57,7 @@ std::string cboard3x3(int w, int h){
       }
     }
     s += "\n";
-  }
+  } // Adding \n after every line.
 
   return s;
 }
