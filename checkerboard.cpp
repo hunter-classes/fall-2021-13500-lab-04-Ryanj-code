@@ -32,25 +32,22 @@ std::string cboard(int w, int h){
 std::string cboard3x3(int w, int h){
   std::string s = "";
   int stars = 0;
-  int space = 0;
-  bool check = true;
+  int spaces = 0;
   
   for(int i = 0; i < h; i++){
     for(int j = 0; j < w; j++){
-      if(stars < 3 && check){
+      if(stars < 3){
 	s += "*";
 	stars++;
       }
-      else if(space < 3 && !check){
+      if(space < 3){
 	s += " ";
 	space++;
       }
       if(stars == 3){
-	check = false;
 	stars = 0;
       }
-      else if(space == 3){
-	check = true;
+      if(space == 3){
 	space = 0;
       }
     }
